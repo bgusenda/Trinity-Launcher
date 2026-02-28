@@ -71,12 +71,23 @@ jobs:
           wget https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage
           wget https://github.com/linuxdeploy/linuxdeploy-plugin-qt/releases/download/continuous/linuxdeploy-plugin-qt-x86_64.AppImage
           chmod +x linuxdeploy*.AppImage
-
+      - name: Instalar Qt 6.10
+        uses: jurplel/install-qt-action@v3
+        with:
+          version: '6.10.0'
+          host: 'linux'
+          target: 'desktop'
+          arch: 'gcc_64'
+          # Asegúrate de incluir los módulos que usa trinity
+          modules: 'qtwebengine qtsvg qtdeclarative qttools'
       - name: Ejecutar empaquetado
         run: |
-          export QMAKE=/usr/lib/qt6/bin/qmake
-          # LD_LIBRARY_PATH local primero para que linuxdeploy use nuestras copias físicas
-          export LD_LIBRARY_PATH=$PWD/APPIMAGE-TRINITY/usr/lib:/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
+          # install-qt-action configura el PATH automáticamente, 
+          # así que 'which qmake' devolverá la versión 6.10
+          export QMAKE=$(which qmake)
+          
+          # Mantenemos tu lógica de librerías locales
+          export LD_LIBRARY_PATH=$PWD/APPIMAGE-TRINITY/usr/lib:$LD_LIBRARY_PATH
           
           ARCH=x86_64 ./linuxdeploy-x86_64.AppImage \
             --appdir APPIMAGE-TRINITY \
