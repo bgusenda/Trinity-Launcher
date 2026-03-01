@@ -723,8 +723,13 @@ This action cannot be undone.</translation>
     <message>
         <location filename="../../src/TrinityLib/ui/windows/trinito_window.cpp" line="621"/>
         <source>¿Estás seguro de eliminar el mundo &apos;%1&apos;?
+Esta acción no 0se puede deshacer.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>¿Estás seguro de eliminar el mundo &apos;%1&apos;?
 Esta acción no se puede deshacer.</source>
-        <translation>Are you sure you want to delete world &apos;%1&apos;?
+        <translation type="vanished">Are you sure you want to delete world &apos;%1&apos;?
 This action cannot be undone.</translation>
     </message>
     <message>
@@ -881,32 +886,32 @@ Replace it?</translation>
 <context>
     <name>VersionManager</name>
     <message>
-        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="60"/>
+        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="66"/>
         <source>Iniciando extracción...</source>
         <translation>Starting extraction...</translation>
     </message>
     <message>
-        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="71"/>
+        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="77"/>
         <source>Extracción completada.</source>
         <translation>Extraction completed.</translation>
     </message>
     <message>
-        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="75"/>
+        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="81"/>
         <source>Error desconocido durante la extracción.</source>
         <translation>Unknown error during extraction.</translation>
     </message>
     <message>
-        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="77"/>
+        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="83"/>
         <source>Error durante la extracción.</source>
         <translation>Error during extraction.</translation>
     </message>
     <message>
-        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="86"/>
+        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="92"/>
         <source>No se pudo eliminar la versión.</source>
         <translation>Could not delete the version.</translation>
     </message>
     <message>
-        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="99"/>
+        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="105"/>
         <source>No se pudo guardar la configuración.</source>
         <translation>Could not save the configuration.</translation>
     </message>

@@ -378,7 +378,7 @@ Vols sobreescriure-la?</translation>
     </message>
     <message>
         <source>No hay ninguna versión seleccionada.</source>
-        <translation>No hi ha cap versió seleccionada.</translation>
+        <translation type="vanished">No hi ha cap versió seleccionada.</translation>
     </message>
     <message>
         <location filename="../../src/TrinityLib/ui/windows/launcher_window.cpp" line="429"/>
@@ -491,9 +491,13 @@ Vols reiniciar l&apos;aplicació ara per aplicar els canvis?</translation>
         <translation>Mods</translation>
     </message>
     <message>
+        <source>Resource  type=&quot;unfinished&quot;Pack</source>
+        <translation type="vanished">Resource Pack</translation>
+    </message>
+    <message>
         <location filename="../../src/TrinityLib/ui/windows/trinito_window.cpp" line="62"/>
-        <source>Resource  type="unfinished"Pack</source>
-        <translation>Resource Pack</translation>
+        <source>Resource Pack</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../src/TrinityLib/ui/windows/trinito_window.cpp" line="63"/>
@@ -723,8 +727,13 @@ Aquesta acció no es pot desfer.</translation>
     <message>
         <location filename="../../src/TrinityLib/ui/windows/trinito_window.cpp" line="621"/>
         <source>¿Estás seguro de eliminar el mundo &apos;%1&apos;?
+Esta acción no 0se puede deshacer.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>¿Estás seguro de eliminar el mundo &apos;%1&apos;?
 Esta acción no se puede deshacer.</source>
-        <translation>Estàs segur d&apos;eliminar el món &apos;%1&apos;?
+        <translation type="vanished">Estàs segur d&apos;eliminar el món &apos;%1&apos;?
 Aquesta acció no es pot desfer.</translation>
     </message>
     <message>
@@ -880,32 +889,32 @@ Sobreescriure-lo?</translation>
 <context>
     <name>VersionManager</name>
     <message>
-        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="60"/>
+        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="66"/>
         <source>Iniciando extracción...</source>
         <translation>Iniciant extracció...</translation>
     </message>
     <message>
-        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="71"/>
+        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="77"/>
         <source>Extracción completada.</source>
         <translation>Extracció completa.</translation>
     </message>
     <message>
-        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="75"/>
+        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="81"/>
         <source>Error desconocido durante la extracción.</source>
         <translation>Error desconegut durant l&apos;extracció.</translation>
     </message>
     <message>
-        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="77"/>
+        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="83"/>
         <source>Error durante la extracción.</source>
         <translation>Error durant l&apos;extracció.</translation>
     </message>
     <message>
-        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="86"/>
+        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="92"/>
         <source>No se pudo eliminar la versión.</source>
         <translation>No s&apos;ha pogut eliminar la versió.</translation>
     </message>
     <message>
-        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="99"/>
+        <location filename="../../src/TrinityLib/core/version_manager.cpp" line="105"/>
         <source>No se pudo guardar la configuración.</source>
         <translation>No s&apos;ha pogut guardar la configuració.</translation>
     </message>
